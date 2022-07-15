@@ -1,11 +1,10 @@
 #pragma once
 #include <iostream>
-using namespace std;
 
 class Texture
 {
 public:
-	Texture(const string &path);
+	Texture(const std::string &path);
 	~Texture();
 
 	void Bind(unsigned int slot = 0) const;
@@ -13,7 +12,7 @@ public:
 
 private:
 	unsigned int id;
-	string filepath;
+	std::string filepath;
 	unsigned char* localBuffer;
 	int width, height, BPP;
 };

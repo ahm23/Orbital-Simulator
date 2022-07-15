@@ -19,14 +19,15 @@ enum ObjectTypes {
 	SATTELITE = 6
 };
 
-static const char* filenames[] = { "Stars.dat", "Planets.dat", "Moons.dat" };
+static const char* filenames[] = { "stars.json", "planets.json", "moons.json" };
 
 struct ObjectConfig {
 	int id;
-	std::string name = "N/A";
+	std::string name;
+	std::string name_display = "N/A";
 	ObjectTypes type;
-	double mass = 0;
-	double mu = 0;
+	double mass;
+	double mu;
 };
 
 class Object {

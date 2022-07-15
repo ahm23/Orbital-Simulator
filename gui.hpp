@@ -8,6 +8,7 @@
 #include "Texture.h"
 #include "SphereRender.h"
 #include "IndexBuffer.h"
+#include "stb_image.h"
 
 glm::mat4 ViewMatrix;
 glm::mat4 ProjectionMatrix;
@@ -115,6 +116,8 @@ void computeMatrices(GLFWwindow* window) {
 int initGUI() {
 
 	GLFWwindow* window;
+	GLFWimage icons[1];
+	icons[0].pixels = stbi_load("./earth.png", & icons[0].width, & icons[0].height, 0, 4);
 
 	if (!glfwInit()) {
 		fprintf(stderr, "Failed to initialize GLFW\n");
@@ -138,7 +141,9 @@ int initGUI() {
 		glfwTerminate();
 		return -1;
 	}
+	glfwSetWindowIcon(window, 1, icons);
 	glfwMakeContextCurrent(window);
+
 
 	glewExperimental = true;
 	if (glewInit() != GLEW_OK) {

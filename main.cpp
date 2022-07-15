@@ -26,8 +26,6 @@
 
 #include "core/SolarSystem.h"
 
-
-using namespace std;
 using namespace Eigen;
 
 

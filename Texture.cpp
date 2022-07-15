@@ -3,7 +3,7 @@
 #include "stb_image.h"
 #include "utils_debug.h"
 
-Texture::Texture(const string& path) : id(0), filepath(path), localBuffer(nullptr), width(0), height(0), BPP(0)
+Texture::Texture(const std::string& path) : id(0), filepath(path), localBuffer(nullptr), width(0), height(0), BPP(0)
 {
 	// Flip texture because OpenGL uses pixels from bottom left.
 	//stbi_set_flip_vertically_on_load(1);

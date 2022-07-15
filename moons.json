@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Moon",
+    "mass": 73476730900000000000000.0,
+    "grav_param": 4904.8695,
+    "avg_radius": 1737.53,
+    "axial_tilt": 1.543,
+    "init_orbit": {
+      "type": 3,
+      "type_angle": "deg",
+      "type_anchor": 2,
+      "anchor": "Earth",
+      "semimajor": 384400.0,
+      "eccentricity": 0.05490,
+      "inclination": 5.145,
+      "raan": 60.4678070593,
+      "argumentOfPeriapsis": 199.598529,
+      "meanLongitude": 321.9649,
+      "timestamp": 1654723507000
+    }
+  }
+]

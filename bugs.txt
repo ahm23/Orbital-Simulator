@@ -1,0 +1,2 @@
+bug: multithreaded "waiting" status might drop a thread into a permanent idle state.
+bug: very rare possibility of queue interference. would not destroy the validity of the results but inneffiecient
